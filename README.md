@@ -40,7 +40,7 @@ $ npm install
 When it's done installing, you can start developing by running:  
 
 ```shell
-$ gulp or npm start
+$ npm start
 ```
 This command will build our project from the source files (`src/`) into a temporary folder (`.build/`). Also starts a local web server that watches our files for changes.
 
