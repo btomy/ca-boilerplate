@@ -1,0 +1,7 @@
+*.DS_Store
+package-lock.json
+Gemfile.lock
+.sass-cache
+build
+node_modules
+yarn.lock
