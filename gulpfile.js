@@ -12,6 +12,12 @@ function copy(settings) {
 		.pipe(connect.reload());
 }
 
+gulp.task('html', function() {
+	gulp.src(config.source + "*.html")
+		.pipe(gulp.dest(config.build))
+		.pipe(connect.reload());
+  });
+
 gulp.task("browserify", function() {
 	return browserify(config.source + "js/index.js")
 		.transform("babelify", {presets: ['es2015']})
@@ -46,10 +52,11 @@ gulp.task("sass", function() {
 		.pipe(connect.reload());
 });
 
-gulp.task("watch", ["sass", "copy", "browserify"], function() {
+gulp.task("watch", ["sass", "copy", "browserify","html"], function() {
 	gulp.watch(config.source + "scss/**/*", ["sass"]);
 	gulp.watch([config.source + "images/**/*", ".src/*.html"], ["copy"]);
 	gulp.watch(config.source + "js/**/*", ["browserify"]);
+	gulp.watch(config.source + "*.html", ["html"]);
 });
 
 gulp.task("connect", function() {
