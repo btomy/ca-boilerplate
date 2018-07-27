@@ -40,6 +40,11 @@ gulp.task("copy", function() {
 		from: config.source + "images/**/*",
 		to: config.build + "images/"
 	});
+
+	copy({
+		from: "./node_modules/cadesignsystem/dist/images/**/*",
+		to: config.build + "images/"
+	});
 });
 
 gulp.task("sass", function() {
