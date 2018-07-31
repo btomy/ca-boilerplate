@@ -59,9 +59,9 @@ gulp.task("sass", function() {
 
 gulp.task("watch", ["sass", "copy", "browserify","html"], function() {
 	gulp.watch(config.source + "scss/**/*", ["sass"]);
-	gulp.watch([config.source + "images/**/*", ".src/*.html"], ["copy"]);
+	gulp.watch("src/**/*.html", ["copy"]);
 	gulp.watch(config.source + "js/**/*", ["browserify"]);
-	gulp.watch(config.source + "*.html", ["html"]);
+	gulp.watch("src/**/*.html", ["html"]);
 });
 
 gulp.task("connect", function() {
