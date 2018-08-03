@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Citizens Advice &ndash; Design System test</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<h1>Page 4</h1>
+
+	<header class="c-global-header" role="banner">
+		<div class="c-wrap">
+			<h1 class="c-global-header__product-title">
+				<!-- probably not a a heading IMO -->
+				<img src="./images/citizens_advice_logo.svg" alt="Citizens Advice logo">
+			</h1>
+		</div>
+	</header>
+
+	<div class="c-wrap">
+
+		<div class="o-grid">
+			<div class="o-grid__unit o-grid__unit--t-2-3">
+
+				<main role="main">
+					<h1>Return fault goods</h1>
+					<p class="h2">You're not entitled to a refund, repair or replacement</p>
+					<p class="p">Your best option bla bla...</p>
+				</main>
+
+			</div>
+			<div class="o-grid__unit o-grid__unit--t-1-3">
+
+				<nav role="complementary">
+					<ul class="o-list o-list--flat-recursive c-section-nav">
+						<li class="c-section-nav__before">In this section</li>
+						<li class="c-section-nav__section">
+							<span class="c-section-nav__section-heading">Something's wrong with a purchase</span>
+							<ul class="c-section-nav__section-items">
+								<li class="c-section-nav__section-item c-section-nav__section-item--active">
+									<a href="#">Link to current page visited</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A link to a page</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A much much much longer link to another page</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A link to a page</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A link to a page</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A link to a page</a>
+								</li>
+								<li class="c-section-nav__section-item">
+									<a href="#">A link to a page</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+
+	<footer role="contentinfo">
+		<div class="c-global-footer u-spacingBottom--none">
+			<div class="c-wrap">
+				<p class="u-spacingBottom--none">
+					Copyright &copy; 2018 Citizens Advice. All rights reserved.
+					<br> Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number
+					279057
+					<br> VAT number 726 0202 76 Company limited by guarantee. Registered number 01436945 England
+					<br> Registered office: Citizens Advice, 3rd Floor North, 200 Aldersgate, London, EC1A 4HD
+				</p>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/bundle.js"></script>
 </body>
+
 </html>
