@@ -20,9 +20,10 @@
 				<form action="page3.html">
 					<fieldset class="c-fieldset">
 						<legend class="c-label">Where did you buy it from</legend>
+						<div class="error" id="id"></div>
 						<div class="c-fieldset__item">
 							<div class="c-radio">
-								<input id="where-shop" value="shop" name="where" type="radio">
+								<input id="where-shop" value="shop" name="where" type="radio" data-validation-message="" required aria-describedby="id" aria-invalid="false">
 								<label for="where-shop">Shop</label>
 							</div>
 						</div>
