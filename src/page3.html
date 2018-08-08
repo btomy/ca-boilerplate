@@ -6,7 +6,79 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Page 3</h1>
+		<header class="c-global-header">
+				<div class="c-wrap">
+				  <h1 class="c-global-header__product-title">
+				  <img src="/images/citizens_advice_logo.svg"alt="Citizens Advice logo">
+				   </h1>
+				</div>
+			  </header>
+	<div class="c-wrap">
+		<div class="o-grid">
+				<div class="o-grid__unit o-grid__unit--t-2-3">
+					<h1 class="h1">Return faulty goods</h1>
+					<fieldset class="c-fieldset c-fieldset--inline">
+							<legend class="c-label">Enter your date of purchase</legend>
+							<span class="c-label__metainfo">For example: 30 4 2017</span>
+						  
+							<div class="c-fieldset__item">
+							  <label class="c-label" for="day">Day:</label>
+							  <div class="c-input c-input--dateinput">
+								<input id="day" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1">
+							  </div>
+							</div>
+						  
+							<div class="c-fieldset__item">
+							  <label class="c-label" for="month">Month:</label>
+							  <div class="c-input c-input--dateinput">
+								<input id="month" type="text" pattern="[0-9]{2}" maxlength="2" minlength="1">
+							  </div>
+							</div>
+						  
+							<div class="c-fieldset__item">
+							  <label class="c-label" for="year">Year:</label>
+							  <div class="c-input c-input--dateinput c-input--dateinput-year">
+								<input id="year" type="text" pattern="[0-9]{4}" maxlength="4" minlength="1">
+							  </div>
+							</div>
+						  </fieldset>
+
+					<div class="c-btn-group">
+						<a class="c-btn c-btn--primary c-btn--action-prev" href="/page2.html">Previous</a>
+						<a class="c-btn c-btn--primary" href="/page4.html">Next</a>
+					</div>
+				</div>
+				<div class="o-grid__unit o-grid__unit--t-1-3">
+						<ul class="o-list o-list--flat-recursive c-section-nav">
+								<li class="c-section-nav__before">In this section</li>
+								<li class="c-section-nav__section">
+								  <span class="c-section-nav__section-heading">Something's wrong with a purchase</span>
+								  <ul class="c-section-nav__section-items">
+									<li class="c-section-nav__section-item c-section-nav__section-item--active"><a href="#">Link to current page visited</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A much much much longer link to another page</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
+									<li class="c-section-nav__section-item"><a href="#">A link to a page</a></li>
+								  </ul>
+								</li>
+							  </ul>
+				</div>
+		
+
+		</div>
+	</div>
+	<footer class="c-global-footer u-spacingBottom--none">
+			<div class="c-wrap">
+			  <p class="u-spacingBottom--none">
+				Copyright &copy; 2018 Citizens Advice. All rights reserved.<br>
+				Citizens Advice is an operating name of the National Association of Citizens Advice Bureaux. Registered charity number 279057 <br>
+				VAT number 726 0202 76 Company limited by guarantee. Registered number 01436945 England<br>
+				Registered office: Citizens Advice, 3rd Floor North, 200 Aldersgate, London, EC1A 4HD
+			  </p>
+			</div>
+		  </footer>
 
 	<script src="js/bundle.js"></script>
 </body>
